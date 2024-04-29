@@ -1,35 +1,119 @@
 @import './base.css';
 
+/* App and body styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Lusitana', Georgia, serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1400px;
+  height: auto;
+  background: #000;
+}
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 90px 1fr 90px;
+  background: white;
+  margin: 0 2rem;
 }
 
+/* text sizes throughout the website */
+h1,
+#lg-txt {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 75px;
+  font-weight: 100;
+}
+
+/* resize h2 under md screen */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+/* resize h1, lgtxt & h2 under sm screen */
+@media only screen and (max-width: 350px) {
+  h1,
+  #lg-txt {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+h3,
+button,
+.btn {
+  font-size: 22px;
+}
+
+h4,
+h5,
 a,
-.green {
+p,
+li,
+section,
+input,
+textarea,
+textarea::placeholder {
+  font-size: 18px;
+}
+
+/* main font colours on website */
+/* p,
+li {
+  color: rgb(164, 164, 164);
+} */
+
+.icon,
+a,
+h1,
+h2,
+h3,
+#lg-txt,
+textarea,
+input {
+  display: block;
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+/* main button stylings */
+button {
+  cursor: pointer;
+}
+
+/* button:hover > .icon {
+  color: gold;
+} */
+
+/* main Link stylings */
+a,
+a:visited,
+a:active {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+/* <a> yellow link */
+#yellowLink {
+  padding: 4px;
+  color: rgb(220, 187, 1);
+  text-decoration: none;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+#yellowLink:hover {
+  color: gold;
 }

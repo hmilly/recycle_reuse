@@ -1,11 +1,11 @@
 <template>
-  <div class="about">
-    <h2>This is the about page</h2>
+  <div class="contact">
+    <h2>This is the contact page</h2>
   </div>
 </template>
 
 <style scoped>
-.about {
+.contact {
   height: 100%;
   width: 100%;
   display: flex;
