@@ -1,25 +1,24 @@
-@import './base.css';
-
 /* App and body styles */
 * {
   box-sizing: border-box;
-  font-family: 'Lusitana', Georgia, serif;
+  font-family: 'philosopher', Georgia, sans-serif;
   padding: 0;
   margin: 0;
 }
 
 body {
-  max-width: 1400px;
-  height: auto;
+  min-width: 280px;
   background: #000;
+  padding: 0 10px;
 }
 
 #app {
+  max-width: 1400px;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: 90px 1fr 90px;
   background: white;
-  margin: 0 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr 90px;
 }
 
 /* text sizes throughout the website */

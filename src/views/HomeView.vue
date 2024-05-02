@@ -10,9 +10,14 @@
   width: 100%;
   display: flex;
   align-items: start;
+  justify-content: center;
+  background-image: url('@/assets/img/clean_home.jpg');
+  background-position: center;
+  background-size: cover;
 }
 h2 {
   text-align: center;
   width: 100%;
+  height: auto;
 }
 </style>

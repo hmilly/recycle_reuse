@@ -1,21 +1,17 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <AppHeader />
+  <Header />
   <main>
     <RouterView />
   </main>
-  <AppFooter />
+  <Footer />
 </template>
 
 <style scoped>
-main {
-  height: auto;
-  width: auto;
-  margin: 10px;
-}
+
 </style>

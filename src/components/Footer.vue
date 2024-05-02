@@ -13,4 +13,7 @@ footer {
   padding: 5px 20px;
   border-top: 1px rgb(214, 214, 214) solid;
 }
+p{
+  text-align: center;
+}
 </style>

@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <header>
     <div class="title">
-      <h1>Recycle Reuse</h1>
+      <img src="@/assets/img/RR-logo.png" alt="Recycle, reuse. Home clearance experts" />
     </div>
     <nav>
       <RouterLink to="/">Home</RouterLink>
@@ -13,25 +13,25 @@ import { RouterLink } from 'vue-router'
       <RouterLink to="/contact">Contact</RouterLink>
     </nav>
   </header>
-
 </template>
 
 <style scoped>
-header{
+header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
-  flex-wrap: wrap;
-  padding: 5px 20px;
-  margin-top: 10px;
+  gap: 20px;
   border-bottom: 1px rgb(214, 214, 214) solid;
 }
 .title {
-  flex: 3;
+  display: flex;
+  align-items: center;
 }
-.title,
-h1 {
-  display: inline-block;
+.title img {
+  min-width: 270px;
+  max-width: 320px;
+  height: 100%;
+  width: auto;
 }
 
 nav {
@@ -40,9 +40,20 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-size: 12px;
+  padding: 0 10px;
   text-align: center;
 }
 nav a {
+  flex: 1;
   padding: 5px;
+}
+
+@media (max-width: 620px) {
+  header {
+    flex-direction: column;
+  }
+  .title {
+    justify-content: center;
+  }
 }
 </style>
