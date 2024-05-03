@@ -8,9 +8,9 @@ import { RouterLink } from 'vue-router'
       <img src="@/assets/img/RR-logo.png" alt="Recycle, reuse. Home clearance experts" />
     </div>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
+      <RouterLink to="/"><p>Home</p></RouterLink>
+      <RouterLink to="/about"><p>About</p></RouterLink>
+      <RouterLink to="/contact"><p>Contact</p></RouterLink>
     </nav>
   </header>
 </template>
@@ -37,15 +37,20 @@ header {
 nav {
   flex: 1;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 12px;
-  padding: 0 10px;
   text-align: center;
+  gap: 10px;
 }
 nav a {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
+  color: darkslategray;
+}
+nav a:hover {
+  color: black;
+  background-color: rgb(236, 238, 236);
 }
 
 @media (max-width: 620px) {

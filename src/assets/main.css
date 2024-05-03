@@ -14,6 +14,7 @@ body {
 
 #app {
   max-width: 1400px;
+  height: auto;
   min-height: 100vh;
   background: white;
   margin: 0 auto;
@@ -22,13 +23,19 @@ body {
 }
 
 /* text sizes throughout the website */
+#bold-text {
+  font-weight: 700;
+}
+
 h1,
-#lg-txt {
+#lg-text {
   font-size: 25px;
+  font-weight: 700;
+  text-shadow: 2px 1px rgb(229, 229, 229);
 }
 
 h2 {
-  font-size: 75px;
+  font-size: 40px;
   font-weight: 100;
 }
 
@@ -39,10 +46,10 @@ h2 {
   }
 }
 
-/* resize h1, lgtxt & h2 under sm screen */
+/* resize h1, lgtext & h2 under sm screen */
 @media only screen and (max-width: 350px) {
   h1,
-  #lg-txt {
+  #lg-text {
     font-size: 22px;
   }
 
@@ -52,6 +59,8 @@ h2 {
 }
 
 h3,
+a,
+a p,
 button,
 .btn {
   font-size: 22px;
@@ -59,7 +68,6 @@ button,
 
 h4,
 h5,
-a,
 p,
 li,
 section,
@@ -77,10 +85,11 @@ li {
 
 .icon,
 a,
+a p,
 h1,
 h2,
 h3,
-#lg-txt,
+#lg-text,
 textarea,
 input {
   display: block;
@@ -94,7 +103,13 @@ input {
 button {
   cursor: pointer;
 }
-
+.pillBtn {
+  margin: 10px 0;
+  padding: 5px;
+  border: solid 1px green;
+  border-radius: 10px;
+  color: green;
+}
 /* button:hover > .icon {
   color: gold;
 } */
@@ -104,15 +119,4 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-}
-
-/* <a> yellow link */
-#yellowLink {
-  padding: 4px;
-  color: rgb(220, 187, 1);
-  text-decoration: none;
-}
-
-#yellowLink:hover {
-  color: gold;
 }

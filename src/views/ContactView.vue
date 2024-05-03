@@ -1,15 +1,18 @@
+
 <template>
   <div class="contact">
-    <h2>This is the contact page</h2>
+    <h2>Contact us</h2>
   </div>
 </template>
 
 <style scoped>
 .contact {
-  height: 100%;
   width: 100%;
+  height: auto;
+  margin: 30px 0;
   display: flex;
-  align-items: start;
+  justify-content: center;
+  align-content: center;
 }
 h2 {
   text-align: center;
