@@ -1,3 +1,7 @@
+<script setup>
+import ServicesBanner from '../components/ServicesBanner.vue'
+</script>
+
 <template>
   <section class="home"></section>
 
@@ -15,6 +19,7 @@
       </p>
       <p id="bold-text">Contact us today for a free quote tailored to your specific needs.</p>
     </div>
+    <ServicesBanner />
   </section>
 </template>
 
