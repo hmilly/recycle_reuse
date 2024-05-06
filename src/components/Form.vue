@@ -59,6 +59,49 @@
   </form>
 </template>
 
+<script>
+export default {
+  name: 'user',
+  data() {
+    return {
+      name: '',
+      email: '',
+      address: '',
+      size: '',
+      sqFoot: '',
+      description: ''
+    }
+  },
+  methods: {
+    onSubmit(e) {
+      e.preventDefault()
+
+      if (!this.email) {
+        alert('Please add more details')
+        return
+      }
+
+      const newUser = {
+        // id: Math.floor(Math.random() * 100000),
+        name: this.name,
+        email: this.email,
+        address: this.address,
+        size: this.size,
+        sqFoot: this.sqFoot,
+        description: this.description
+      }
+
+      this.name = ''
+      this.email = ''
+      this.address = ''
+      this.size = ''
+      this.sqFoot = ''
+      this.description = ''
+    }
+  }
+}
+</script>
+
 <style scoped>
 form {
   margin: 0 auto;

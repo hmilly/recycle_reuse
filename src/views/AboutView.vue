@@ -1,3 +1,6 @@
+<script setup>
+import AboutCards from '../components/AboutCards.vue'
+</script>
 
 <template>
   <section>
@@ -21,6 +24,7 @@
         enquire.
       </p>
     </div>
+    <AboutCards />
   </section>
 </template>
 
