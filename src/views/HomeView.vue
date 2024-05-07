@@ -1,5 +1,6 @@
 <script setup>
 import ServicesBanner from '../components/ServicesBanner.vue'
+import Reviews from '../components/Reviews.vue'
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import ServicesBanner from '../components/ServicesBanner.vue'
     </div>
     <ServicesBanner />
   </section>
+  <Reviews/>
 </template>
 
 <style scoped>

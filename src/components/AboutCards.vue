@@ -80,16 +80,14 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(207, 252, 224);
-  border: solid 1px black;
+  border: solid 1px rgb(207, 252, 224);;
   transition-duration: 300ms;
   border-radius: 10px;
   padding: 20px;
   gap: 20px;
 }
 .card:hover {
-  cursor: pointer;
-  background-color: rgb(211, 252, 207);
+  background-color: rgb(207, 252, 224);
 }
 .card_logo {
   width: 100px;

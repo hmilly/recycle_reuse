@@ -9,8 +9,8 @@ import { RouterLink } from 'vue-router'
     </div>
     <nav>
       <RouterLink to="/"><p>Home</p></RouterLink>
-      <RouterLink to="/about"><p>About</p></RouterLink>
       <RouterLink to="/contact"><p>Contact</p></RouterLink>
+      <RouterLink to="/about"><p>About</p></RouterLink>
     </nav>
   </header>
 </template>
